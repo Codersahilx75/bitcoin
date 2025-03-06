@@ -3,7 +3,8 @@ import Header from "../layout/Header";
 import Dashboard from "../components/Dashboard";
 import Keyfeatures from "../components/Keyfeatures"; // Import Keyfeatures
 import Howitworks from "../components/Howitworks";
-import Winner from "../components/winner";
+import Winner from "../components/Winner";
+
 import Warriors from "../components/Warriors";
 import Tracking from "../components/Tracking";
 import Footer from "../layout/Footer";
