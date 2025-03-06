@@ -87,10 +87,10 @@ export default function Warriors() {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </motion.p>
 
-        {/* Slider Section (animates from the right) */}
+        {/* Slider Section (animates from the top) */}
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="mt-12 w-full mx-auto relative"

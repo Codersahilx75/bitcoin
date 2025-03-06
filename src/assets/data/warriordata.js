@@ -18,13 +18,6 @@ const warriordata = {
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       rating: 5
     },
-    {
-      name: "Marcus Tipton",
-      position: "CEO Of Apples Of Oranges",
-      image: marcusImg,
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      rating: 5
-    },
 
     {
       name: "Marcus Tipton",
@@ -33,6 +26,7 @@ const warriordata = {
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       rating: 5
     },
+   
     {
       name: "Marcus Tipton",
       position: "CEO Of Apples Of Oranges",
@@ -40,6 +34,24 @@ const warriordata = {
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       rating: 5
     },
+   
+    {
+      name: "Marcus Tipton",
+      position: "CEO Of Apples Of Oranges",
+      image: marcusImg,
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      rating: 5
+    },
+   
+    {
+      name: "Marcus Tipton",
+      position: "CEO Of Apples Of Oranges",
+      image: marcusImg,
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      rating: 5
+    },
+   
+   
    
   ],
   footer: {

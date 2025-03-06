@@ -4,7 +4,7 @@ import dashboardData from "../assets/data/dashboardData"; // Import Data
 
 export default function Dashboard() {
   return (
-    <div className="container mt-10 lg:mt-20 flex items-center justify-center text-white relative">
+    <div className="container  mt-10 lg:mt-20 flex items-center justify-center text-white relative">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-36 relative z-10">
         {/* Left Content - Animates from Left */}
         <motion.div
