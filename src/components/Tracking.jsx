@@ -6,11 +6,12 @@ export default function Tracking() {
   return (
     <div className="text-white py-12 px-4 md:px-10">
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
-        {/* Left Section (Text + Buttons) - animates in from the right */}
+        
+        {/* Left Section (Text + Buttons) - animates in from the Top */}
         <motion.div 
           className="w-full lg:w-1/2 text-center lg:text-left px-4"
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
@@ -35,11 +36,11 @@ export default function Tracking() {
           </div>
         </motion.div>
 
-        {/* Right Section (Images) - animates in from the left */}
+        {/* Right Section (Images) - animates in from the Bottom */}
         <motion.div 
           className="w-full lg:w-1/2 flex justify-center relative mt-10 lg:mt-0"
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >

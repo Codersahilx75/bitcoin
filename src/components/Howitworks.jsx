@@ -8,8 +8,8 @@ export default function HowItWorks() {
       {/* Heading */}
       <div className="text-center">
         <motion.h3
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
           className="text-3xl outfit sm:text-4xl md:text-6xl font-bold"
@@ -17,14 +17,14 @@ export default function HowItWorks() {
           HOW IT <span className="text-[#007bff]">WORKS</span>
         </motion.h3>
         <motion.p
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false, amount: 0.3 }}
-          transition={{ duration: 1.2, ease: "easeInOut" }}
+          transition={{ duration: 1.2, ease: "easeInOut", delay: 0.1 }}
           className="text-gray-400 outfit text-sm sm:text-base md:text-lg max-w-3xl mx-auto mt-3"
         >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.
         </motion.p>
       </div>
 
@@ -35,10 +35,14 @@ export default function HowItWorks() {
           {workData.steps.map((step, index) => (
             <motion.div
               key={step.id}
-              initial={{ x: -100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: false, amount: 0.2 }}
-              transition={{ duration: 1.2, ease: "easeInOut", delay: index * 0.1 }}
+              transition={{
+                duration: 1.2,
+                ease: "easeInOut",
+                delay: index * 0.1,
+              }}
               className={`w-full md:w-1/3 flex flex-col items-start ${
                 index === 1 ? "mt-5 md:mt-20" : index === 2 ? "mt-5 md:mt-36" : ""
               }`}
@@ -57,8 +61,8 @@ export default function HowItWorks() {
 
         {/* Image + Button */}
         <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
           className="flex-1 flex flex-col items-center justify-end mt-10 md:mt-0"

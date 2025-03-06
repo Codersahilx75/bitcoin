@@ -61,10 +61,10 @@ export default function Warriors() {
   return (
     <div className="text-white text-center py-16 px-4">
       <div className="container mx-auto">
-        {/* Title Section */}
-        <motion.h2
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+        {/* Title Section - Animates from the Top */}
+        <motion.div
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
           className="text-3xl outfit sm:text-4xl md:text-5xl font-bold"
@@ -75,21 +75,20 @@ export default function Warriors() {
             <br /> Transparency
           </span>{" "}
           Starts Here.
-        </motion.h2>
+        </motion.div>
         <motion.p
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false, amount: 0.3 }}
-          transition={{ duration: 1.2, ease: "easeInOut" }}
+          transition={{ duration: 1.2, ease: "easeInOut", delay: 0.1 }}
           className="text-md text-gray-400 outfit sm:text-xl mt-4 max-w-3xl mx-auto"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </motion.p>
 
-        {/* Slider Section (animates from the top) */}
+        {/* Slider Section - Animates from the Bottom */}
         <motion.div
-          initial={{ opacity: 0, y: -30 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -102,9 +101,7 @@ export default function Warriors() {
                 <div key={index} className="p-2 sm:p-4">
                   <div
                     className={`bg-gradient-to-b from-[#0A1F38] via-[#063167] to-[#0A1F38] rounded-xl p-4 sm:p-6 shadow-lg border border-blue-500 flex flex-col items-center transition-all duration-500 ${
-                      isActive
-                        ? "scale-105 opacity-100 shadow-xl"
-                        : "scale-95 opacity-85"
+                      isActive ? "scale-105 opacity-100 shadow-xl" : "scale-95 opacity-85"
                     }`}
                   >
                     <p className="text-gray-300 outfit text-sm sm:text-lg text-left mb-4 sm:mb-6">
@@ -132,9 +129,7 @@ export default function Warriors() {
                           <FaStar
                             key={i}
                             className={`${
-                              i < testimonial.rating
-                                ? "text-yellow-500"
-                                : "text-gray-500"
+                              i < testimonial.rating ? "text-yellow-500" : "text-gray-500"
                             } text-xs sm:text-sm`}
                           />
                         ))}
@@ -147,10 +142,10 @@ export default function Warriors() {
           </Slider>
         </motion.div>
 
-        {/* Footer Section */}
+        {/* Footer Section - Animates from the Bottom */}
         <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="mt-20 flex items-center justify-center text-xl font-semibold"

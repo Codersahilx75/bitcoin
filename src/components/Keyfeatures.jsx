@@ -6,21 +6,22 @@ export default function Keyfeatures() {
   return (
     <div className="mt-10 md:mt-28 text-center px-4">
       {/* Heading */}
-
       <motion.h3
-        initial={{ x: 100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 1.2, ease: "easeInOut" }}
         className="text-2xl outfit sm:text-5xl md:text-5xl font-semibold text-white"
       >
         KEY <span className="text-[#007bff]">FEATURES</span>
       </motion.h3>
+
+      {/* Subheading */}
       <motion.p
-        initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: false, amount: 0.3 }}
-        transition={{ duration: 1.2, ease: "easeInOut" }}
+        transition={{ duration: 1.2, ease: "easeInOut", delay: 0.1 }}
         className="text-gray-300 outfit text-lg sm:text-xl max-w-2xl mx-auto mt-4"
       >
         BlocFans gives you the tools to outsmart scammers and track the smartest

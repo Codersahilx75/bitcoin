@@ -4,12 +4,13 @@ import dashboardData from "../assets/data/dashboardData"; // Import Data
 
 export default function Dashboard() {
   return (
-    <div className="container  mt-10 lg:mt-20 flex items-center justify-center text-white relative">
+    <div className="container mt-10 lg:mt-20 flex items-center justify-center text-white relative">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-36 relative z-10">
-        {/* Left Content - Animates from Left */}
+        
+        {/* Left Content - Animates from the Top */}
         <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center md:text-left"
@@ -35,10 +36,10 @@ export default function Dashboard() {
           </div>
         </motion.div>
 
-        {/* Right Image Section - Animates from Right */}
+        {/* Right Image Section - Animates from the Bottom */}
         <motion.div
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative flex items-center justify-center w-[min(80vw,300px)] aspect-square sm:max-w-[250px] md:max-w-[300px]"
